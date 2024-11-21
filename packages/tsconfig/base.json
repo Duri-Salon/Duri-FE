@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "CommonJS",
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@duri-fe/ui": ["../ui/src"],
+      "@duri-fe/utils": ["../utils/src"]
+    }
+  }
+}

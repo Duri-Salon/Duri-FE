@@ -1,0 +1,14 @@
+{
+  "name": "@duri-fe/ui",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "svgr": "npx @svgr/cli -d packages/ui/src/assets --ignore-existing --no-dimensions --ext tsx packages/ui/src/assets"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}
