@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@duri-fe/ui": "workspace:packages/ui",
+    "@duri-fe/utils": "workspace:packages/utils",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
