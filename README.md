@@ -13,10 +13,10 @@
 
 <br/>
 
-
 ## 2. 프로젝트 구조
 
 ## 폴더구조
+
 <br/>
 
 ```root/
@@ -114,13 +114,15 @@
 
 
 ```
+
 <br />
 
-
 ## 3. Technology Stack (기술 스택)
+
 <img width="500" alt="architecture" src="https://github.com/user-attachments/assets/cf16f43b-2c78-446e-8799-13a95f91fae3">
 
 ### 3.1 Frontend
+
 <table>
   <tr>
     <th>React</th><th>TypeScript</th><th>React-Query</th>
@@ -133,6 +135,7 @@
 </table>
 
 ### 3.2 Backend
+
 <table>
   <tr>
     <th>JAVA</th><th>Spring Boot</th><th>OAuth2</th><th>Spring Security</th><th>JWT</th>
@@ -147,6 +150,7 @@
 </table>
 
 ### 3.3 Cooperation
+
 <table>
   <tr>
     <th>Git</th><th>Figma</th><th>Notion</th><th>Jira</th>
@@ -181,54 +185,58 @@ yarn preview
 
 <br />
 
-
 ## 5. 팀 규칙
 
 ### **5.1 커뮤니케이션 규칙**
+
 - 매일 **오전 9시** 데일리 스크럼 진행
-    - **어제 한 일**, **오늘 할 일**, **문제점**을 공유하며 진행 상황 점검.
+  - **어제 한 일**, **오늘 할 일**, **문제점**을 공유하며 진행 상황 점검.
 - 문서 공유 및 회의 기록은 **Notion**을 통해 관리.
 - 매주 **일요일 저녁 10시** 정기 회의 진행
-    - 주간 작업 점검 및 다음 주 계획 수립.
+  - 주간 작업 점검 및 다음 주 계획 수립.
 
 ### **5.2 컨벤션**
 
 #### **코딩 컨벤션**
+
 - **프론트엔드 코딩 컨벤션**: [노션링크](https://checkered-muscari-213.notion.site/f526ae57696c49ddbdfc67662d7971d4?pvs=4)
 - **백엔드 코딩 컨벤션**: [노션링크](https://checkered-muscari-213.notion.site/da1788e44f3249799b0f5158e2a4ceb8?pvs=4)
 
 #### **브랜치 명명 규칙**
+
 - **브랜치 명명 규칙**: [노션링크](https://checkered-muscari-213.notion.site/780701593d864f288238478aa6395224?pvs=4)
 
 #### **Pull Request 컨벤션**
+
 - **Pull Request 컨벤션**: [노션링크](https://checkered-muscari-213.notion.site/PR-1dbbb6a28d2d4784964e4e855629656c?pvs=4)
 
-
 ### **5.3 Jira로 작업 방식**
+
 - Epic, Story, Task 등 우선순위와 작업 단계를 명확히 구분.
 - 작업 상태는 **To Do → In Progress → Done**으로 관리.
 - 각 Task 완료 시, 관련 **Pull Request 링크**를 Jira에 첨부.
 
 <br/>
 
-
-
 ## 6. Team Members (팀원 및 팀 소개)
+
 ### 6.1 팀명
+
 - **구름잉**
 - 애견 미용을 뜻하는 Grooming에서 영감을 받은 이름으로, 구름처럼 포근하고 믿음직한 서비스를 제공하겠다는 목표를 담음.
 
 ### 6.2 팀원
-|                   노이진                    |                   김찬별                   |                   심승보                    |                   윤준수                    |
-|:----------------------------------------:|:---------------------------------------:|:----------------------------------------:|:----------------------------------------:|
-|    <img src="https://avatars.githubusercontent.com/u/52371699?v=4" alt="노이진" width="100">    |   <img src="https://avatars.githubusercontent.com/u/47071366?v=4" alt="김찬별" width="100">    |    <img src="https://avatars.githubusercontent.com/u/112371013?v=4" alt="심승보" width="100">    |    <img src="https://avatars.githubusercontent.com/u/174159935?v=4" alt="윤준수" width="100">    | 
-|                 FrontEnd                 |                FrontEnd                 |                 FrontEnd                 |                 FrontEnd                 | 
-| [GitHub](https://github.com/leejin-rho) | [GitHub](https://github.com/cksquf98) | [GitHub](https://github.com/seungboshim) |    [GitHub](https://github.com/jueunseuk)    |
 
-|                   김은수                   |                김재승                 |                          김태연                         |
-|:---------------------------------------:|:----------------------------------:|:----------------------------------------------------:|
-|   <img src="https://avatars.githubusercontent.com/u/159528848?v=4" alt="김은수" width="100">    | <img src="https://avatars.githubusercontent.com/u/117148033?v=4" alt="김재승" width="100"> |          <img src="https://avatars.githubusercontent.com/u/65546884?v=4" alt="김태연" width="100">          |
-|                 BackEnd                 |              BackEnd              |                       BackEnd                       |
-| [GitHub](https://github.com/delight-es) |             [GitHub](https://github.com/rlawotmd)             |      [GitHub](https://github.com/taeyeon0319) |
+|                                          노이진                                           |                                          김찬별                                           |                                           심승보                                           |                                           윤준수                                           |
+| :---------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------: |
+| <img src="https://avatars.githubusercontent.com/u/52371699?v=4" alt="노이진" width="100"> | <img src="https://avatars.githubusercontent.com/u/47071366?v=4" alt="김찬별" width="100"> | <img src="https://avatars.githubusercontent.com/u/112371013?v=4" alt="심승보" width="100"> | <img src="https://avatars.githubusercontent.com/u/174159935?v=4" alt="윤준수" width="100"> |
+|                                         FrontEnd                                          |                                         FrontEnd                                          |                                          FrontEnd                                          |                                          FrontEnd                                          |
+|                          [GitHub](https://github.com/leejin-rho)                          |                           [GitHub](https://github.com/cksquf98)                           |                          [GitHub](https://github.com/seungboshim)                          |                           [GitHub](https://github.com/jueunseuk)                           |
+
+|                                           김은수                                           |                                           김재승                                           |                                          김태연                                           |
+| :----------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: |
+| <img src="https://avatars.githubusercontent.com/u/159528848?v=4" alt="김은수" width="100"> | <img src="https://avatars.githubusercontent.com/u/117148033?v=4" alt="김재승" width="100"> | <img src="https://avatars.githubusercontent.com/u/65546884?v=4" alt="김태연" width="100"> |
+|                                          BackEnd                                           |                                          BackEnd                                           |                                          BackEnd                                          |
+|                          [GitHub](https://github.com/delight-es)                           |                           [GitHub](https://github.com/rlawotmd)                            |                         [GitHub](https://github.com/taeyeon0319)                          |
 
 <br/>

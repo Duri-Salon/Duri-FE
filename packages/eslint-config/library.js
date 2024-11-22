@@ -1,34 +1,31 @@
-const { resolve } = require("node:path");
+const { resolve } = require('node:path');
 
-const project = resolve(process.cwd(), "tsconfig.json");
+const project = resolve(process.cwd(), 'tsconfig.json');
 
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
-  extends: ["eslint:recommended", "prettier", "turbo"],
-  plugins: ["only-warn"],
-  globals: {
-    React: true,
-    JSX: true,
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'turbo',
+    'prettier',
+  ],
+  rules: {
+    'no-console': 'warn',
+    'react/react-in-jsx-scope': 'off',
+    'turbo/no-undeclared-env-vars': 'off',
+    'prettier/prettier': 'error',
   },
-  env: {
-    node: true,
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+    },
   },
   settings: {
-    "import/resolver": {
-      typescript: {
-        project,
-      },
+    react: {
+      version: 'detect',
     },
   },
-  ignorePatterns: [
-    // Ignore dotfiles
-    ".*.js",
-    "node_modules/",
-    "dist/",
-  ],
-  overrides: [
-    {
-      files: ["*.js?(x)", "*.ts?(x)"],
-    },
-  ],
 };
