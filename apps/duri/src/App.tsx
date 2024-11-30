@@ -6,6 +6,11 @@ import { globalStyle } from '@duri-fe/ui';
 import { Global } from '@emotion/react';
 
 import Home from '@pages/Home';
+import PaymentPage from '@pages/PaymentPage';
+import { FailPage } from '@pages/PaymentPage/Fail';
+import { SuccessPage } from '@pages/PaymentPage/Success';
+
+import StartPage from './pages/Onboarding/StartPage';
 
 function App() {
   return (
@@ -14,7 +19,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         {/* <Route path="/login" element={<Login />} /> */}
-        <Route path="/onboarding" element={<Onboarding />} />
+        <Route path="/onboarding" element={<StartPage />} />
+        <Route path="/onboarding/detail" element={<Onboarding />} />
+        <Route path="/payment/:quotationId" element={<PaymentPage />} />
+        <Route path="/payment/success" element={<SuccessPage />} />
+        <Route path="/payment/fail" element={<FailPage />} />
       </Routes>
     </BrowserRouter>
   );
