@@ -7,3 +7,5 @@ export * from './Navbar';
 export * from './StatusBar';
 export * from './Dropdown';
 export * from './SpeechBallonContainer';
+export * from './Header';
+export * from './Card';
