@@ -12,6 +12,7 @@ import PaymentPage from '@pages/PaymentPage';
 import FailPage from '@pages/PaymentPage/Fail';
 import SuccessPage from '@pages/PaymentPage/Success';
 
+import RequestPage from './pages/RequestPage';
 import Shop from './pages/Shop';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path="/payment/fail" element={<FailPage />} />
 
         <Route path="/shop" element={<Shop />} />
+        <Route path="/request" element={<RequestPage />} />
       </Routes>
     </BrowserRouter>
   );

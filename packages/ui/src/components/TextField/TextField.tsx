@@ -17,6 +17,7 @@ interface TextFieldProps
   label?: string;
   helperText?: { type: 'normal' | 'error'; text: string }[];
   width?: number;
+  widthPer?: string;
   height?: number;
   multiline?: boolean;
   isSubTextField?: boolean;
@@ -53,6 +54,7 @@ export const TextField = forwardRef<
       helperText,
       placeholder = '내용을 입력해주세요.',
       width = 328,
+      widthPer,
       height,
       multiline = false,
       isSubTextField = false,
@@ -66,8 +68,10 @@ export const TextField = forwardRef<
     },
     ref,
   ) => {
+    // widthPer이 있을 경우, 퍼센트로 처리하고, 없으면 width를 사용
+    const selectedWidth = widthPer ? `${widthPer}` : `${width}px`;
     return (
-      <Container width={isSubTextField ? width + 37 : width}>
+      <Container width={isSubTextField ? width + 37 : selectedWidth}>
         <HeightFitFlex
           direction="row"
           gap={19}
@@ -128,8 +132,8 @@ export const TextField = forwardRef<
 
 TextField.displayName = 'TextField';
 
-const Container = styled(Flex)<{ width: number }>`
-  width: ${({ width }) => width}px;
+const Container = styled(Flex)<{ width: number | string }>`
+  width: ${({ width }) => width};
 
   flex-direction: column;
   align-items: flex-start;
