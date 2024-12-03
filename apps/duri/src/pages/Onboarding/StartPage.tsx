@@ -15,14 +15,14 @@ const StartPage = () => {
         padding="107px 20px 0 20px"
       >
         <Wrapper direction="column">
-          <Text typo="Heading2" align="center">
+          <Text typo='Heading2' align="center">
             두리묭실 서비스를 이용하기 위해
           </Text>
-          <Text typo="Heading2" align="center">
+          <Text typo='Heading2' align="center">
             반려견의 정보를 입력해주세요!
           </Text>
         </Wrapper>
-        <Button width="335px" height="54px" onClick={handleClickButton}>
+        <Button typo='Title3' width='335px' height='54px' onClick={handleClickButton}>
           입력하러 가기
         </Button>
       </Container>

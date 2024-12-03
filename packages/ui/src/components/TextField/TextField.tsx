@@ -6,6 +6,7 @@ import {
 } from 'react';
 
 import { AlertStar } from '@duri-fe/ui';
+import { SerializedStyles } from '@emotion/react';
 import styled from '@emotion/styled';
 
 import { theme } from '../../styles';
@@ -27,6 +28,7 @@ interface TextFieldProps
   isError?: boolean;
   isEssential?: boolean;
   isNoBorder?: boolean;
+  placeholderTypo?: SerializedStyles;
 }
 
 /**
@@ -53,6 +55,7 @@ export const TextField = forwardRef<
       label,
       helperText,
       placeholder = '내용을 입력해주세요.',
+      placeholderTypo,
       width = 328,
       widthPer,
       height,
@@ -64,6 +67,7 @@ export const TextField = forwardRef<
       isRound = false,
       isEssential = false,
       isNoBorder = false,
+
       ...props
     },
     ref,
@@ -103,6 +107,7 @@ export const TextField = forwardRef<
               {...props}
               ref={ref as ForwardedRef<HTMLTextAreaElement>}
               placeholder={placeholder}
+              placeholderTypo={placeholderTypo}
               spellCheck={false}
               height={height}
               fontColor={fontColor}
@@ -113,6 +118,7 @@ export const TextField = forwardRef<
                 {...props}
                 ref={ref as ForwardedRef<HTMLInputElement>}
                 placeholder={placeholder}
+                placeholderTypo={placeholderTypo}
                 spellCheck={false}
                 height={height}
                 fontColor={fontColor}
@@ -164,6 +170,7 @@ const StyledInput = styled.input<{
   isError?: boolean;
   isRound?: boolean;
   isNoBorder?: boolean;
+  placeholderTypo?: SerializedStyles;
 }>`
   width: inherit;
   height: ${({ height }) => height ?? 40}px;
@@ -216,12 +223,15 @@ const StyledInput = styled.input<{
           : isRound
             ? theme.palette.Black
             : theme.palette.Gray300};
+
+    ${({ placeholderTypo }) => placeholderTypo};
   }
 `;
 
 const StyledTextArea = styled.textarea<{
   height?: number;
   fontColor: string;
+  placeholderTypo?: SerializedStyles;
 }>`
   width: inherit;
   height: ${({ height }) => (height ? height : 240)}px;
@@ -244,6 +254,7 @@ const StyledTextArea = styled.textarea<{
 
   ::placeholder {
     color: ${theme.palette.Gray300};
+    ${({ placeholderTypo }) => placeholderTypo};
   }
   ::-webkit-scrollbar {
     width: 12px;
