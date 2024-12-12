@@ -21,6 +21,7 @@ import { SendRequestQBox } from '../shop/SendRequesQBox';
 
 export const ShopHorizontal = ({
   shopList,
+  // disabledHome = false
   home = true,
 }: {
   shopList: RegularShopType[];
@@ -52,7 +53,11 @@ export const ShopHorizontal = ({
             >
               <Flex justify="space-between">
                 <Wrapper direction="column" align="flex-start">
-                  <Flex justify="flex-start" gap={2} onClick={() => handleClickShop(shop.shopId)}>
+                  <Flex
+                    justify="flex-start"
+                    gap={2}
+                    onClick={() => handleClickShop(shop.shopId)}
+                  >
                     <Text typo="Title3">{shop.shopName}</Text>
                     <NextArrow width={20} height={20} />
                   </Flex>

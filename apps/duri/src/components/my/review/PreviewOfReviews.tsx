@@ -1,12 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 
-import {
-  EmptyImage,
-  Flex,
-  Image,
-  Text,
-  theme,
-} from '@duri-fe/ui';
+import { EmptyImage, Flex, Image, Text, theme } from '@duri-fe/ui';
 import styled from '@emotion/styled';
 
 interface ReviewProps {
@@ -22,15 +16,17 @@ export const PreviewOfReviews = ({
   createdAt,
   reviewImageURL,
 }: ReviewProps) => {
-    const navigate = useNavigate();
-    const handleNavigate = () => {
-      navigate(`/my/review/${reviewId}`);
-    };
+  const navigate = useNavigate();
+  const handleNavigate = () => {
+    navigate(`/my/review/${reviewId}`);
+  };
   return (
     <ImageWrapper borderRadius={8} direction="column" onClick={handleNavigate}>
-      {reviewImageURL ? (
+      {reviewImageURL === '' ? (
         <>
-          <Image src={reviewImageURL} borderRadius={8} />
+          <FlexGrow>
+            <EmptyImage width={40} height={40} />
+          </FlexGrow>
           <DateTextAbsolute typo="Caption5" colorCode={theme.palette.White}>
             {createdAt}
           </DateTextAbsolute>
@@ -40,9 +36,7 @@ export const PreviewOfReviews = ({
         </>
       ) : (
         <>
-          <FlexGrow>
-            <EmptyImage width={40} height={40} />
-          </FlexGrow>
+          <Image src={reviewImageURL} borderRadius={8} />
           <DateTextAbsolute typo="Caption5" colorCode={theme.palette.White}>
             {createdAt}
           </DateTextAbsolute>
@@ -85,5 +79,5 @@ const DateTextAbsolute = styled(Text)`
   z-index: 2;
 `;
 const FlexGrow = styled(Flex)`
-  flex: 1
+  flex: 1;
 `;

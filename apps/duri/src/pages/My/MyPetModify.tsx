@@ -38,13 +38,15 @@ const MyPetModifyPage = () => {
     navigate('/my/pet', { state: location.state });
   };
   const onChange = (file: string) => {
-    setValue('imageURL',file)
-  }
+    setValue('imageURL', file);
+  };
 
+  // with 유효성 검사 라이브러리 Yup, zod
   const { control, handleSubmit, setValue, getValues } = useForm<FormData>({
     mode: 'onChange',
     defaultValues: {
-      imageURL: 'https://s3-alpha-sig.figma.com/img/2b3d/3445/169b817c088e24ca9f6999b9f7c18e5a?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UNX-HCHQvf6OGFxdmOjpEf~gbzgcXfr7L~ZILgiSxtXRAt2cDJemS7sJOHFn177dH4-rXFgC0mu0iSo4mT02cqw0ybPZ7D-2GK5ch4XLi20GbfJjcy3yPJSXbtOonwpHQFjJDgbjRDu0VK~iz3DJSvLzAjmn5GvFaikpRDWTtJX51eL-YTGIBt7Q1vYxt66nU2dyREh1wb7u5chrtXImto2iEdFviMwJgZKP~f3K1457j~KdS~gM5gtOtm7ozWPTjdraKskNXGJhWWe9wfE74HFPFG~Tj~lY89I2fPd5TNnQI0CCghKbFOLIUyGtrJ0KceIW-gsIic-A3GWQ9IFCyg__',
+      imageURL:
+        'https://s3-alpha-sig.figma.com/img/2b3d/3445/169b817c088e24ca9f6999b9f7c18e5a?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UNX-HCHQvf6OGFxdmOjpEf~gbzgcXfr7L~ZILgiSxtXRAt2cDJemS7sJOHFn177dH4-rXFgC0mu0iSo4mT02cqw0ybPZ7D-2GK5ch4XLi20GbfJjcy3yPJSXbtOonwpHQFjJDgbjRDu0VK~iz3DJSvLzAjmn5GvFaikpRDWTtJX51eL-YTGIBt7Q1vYxt66nU2dyREh1wb7u5chrtXImto2iEdFviMwJgZKP~f3K1457j~KdS~gM5gtOtm7ozWPTjdraKskNXGJhWWe9wfE74HFPFG~Tj~lY89I2fPd5TNnQI0CCghKbFOLIUyGtrJ0KceIW-gsIic-A3GWQ9IFCyg__',
       name: '신참이',
       weight: 3.1,
       breed: '시츄',
@@ -61,7 +63,7 @@ const MyPetModifyPage = () => {
       <Header
         title="마이펫 정보 수정"
         titleAlign="start"
-        backIcon={true}
+        backIcon
         onClickBack={() => navigate(-1)}
       />
       <Flex direction="column" padding="0 20px" margin="0 0 30px 0">

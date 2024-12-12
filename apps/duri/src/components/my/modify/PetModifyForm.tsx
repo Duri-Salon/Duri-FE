@@ -3,6 +3,7 @@ import { Control, Controller, UseFormSetValue } from 'react-hook-form';
 import { breeds } from '@duri/assets/data';
 import { FormData } from '@duri/pages/My/MyPetModify';
 import { Button, Dropdown, Flex, Text, theme, WidthFitFlex } from '@duri-fe/ui';
+import styled from '@emotion/styled';
 
 import { PetDiseaseModify } from './PetDiseaseModify';
 import { PetPersonalityModify } from './PetPersonalityModify';
@@ -208,3 +209,7 @@ export const PetModifyForm = ({
     </Flex>
   );
 };
+
+export const PrimaryDropdown = styled(Dropdown)`
+  background-color: red;
+`;

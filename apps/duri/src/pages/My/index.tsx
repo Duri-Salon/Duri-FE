@@ -20,19 +20,29 @@ import { useGetPetInfo } from '@duri-fe/utils';
 import styled from '@emotion/styled';
 
 const MyPage = () => {
-  const petData = useGetPetInfo();
   const [petInfo, setPetInfo] = useState<PetInfoType>();
+
   const navigate = useNavigate();
-  const handleNavigate = (path: string) => navigate(path);
+
+  const petData = useGetPetInfo();
+
+  const handleNavigateButtonClick = (path: string) => {
+    navigate(path);
+  };
+
   const logout = () => {
     sessionStorage.removeItem('token');
     navigate('/login');
   };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   useEffect(() => {
-    if (petData) setPetInfo(petData);
+    if (petData) {
+      setPetInfo(petData);
+    }
   }, [petData]);
 
   return (
@@ -41,25 +51,28 @@ const MyPage = () => {
         <Header />
         <UserInfo userId={1} userName="김찬별" phone="01051778747" />
         <Status reservationCnt={3} noShowCnt={0} />
-        {petInfo && <PetInfoCard
-          petId={petInfo.petId}
-          age={petInfo.age}
-          name={petInfo.name}
-          breed={petInfo.breed}
-          gender={petInfo.gender}
-          neutering={petInfo.neutering ?? false}
-          weight={petInfo.weight}
-          imageURL={petInfo.image}
-        />}
+        {petInfo && (
+          <PetInfoCard
+            petId={petInfo.petId}
+            age={petInfo.age}
+            name={petInfo.name}
+            breed={petInfo.breed}
+            gender={petInfo.gender}
+            neutering={petInfo.neutering ?? false}
+            weight={petInfo.weight}
+            imageURL={petInfo.image}
+          />
+        )}
 
         <Flex direction="column" margin="8px 0" gap={8}>
           <Flex gap={10}>
+            {/* a 태그 */}
             <FlexButton
               padding="13px 35px"
               backgroundColor={theme.palette.White}
               borderRadius={8}
               gap={5}
-              onClick={() => handleNavigate('/my/shop')}
+              onClick={() => handleNavigateButtonClick('/my/shop')}
             >
               <Store width={28} height={28} />
               <Text typo="Label1">단골가게</Text>
@@ -69,7 +82,7 @@ const MyPage = () => {
               backgroundColor={theme.palette.White}
               borderRadius={8}
               gap={5}
-              onClick={() => handleNavigate('/my/history')}
+              onClick={() => handleNavigateButtonClick('/my/history')}
             >
               <Scissors width={24} height={24} />
               <Text typo="Label1">이용기록</Text>
@@ -80,13 +93,13 @@ const MyPage = () => {
             backgroundColor={theme.palette.White}
             borderRadius={8}
             gap={10}
-            onClick={() => handleNavigate('/my/review')}
+            onClick={() => handleNavigateButtonClick('/my/review')}
           >
             <Write width={18} height={18} />
             <Text typo="Label1">내가 쓴 후기</Text>
           </FlexButton>
         </Flex>
-        <FlexButton margin="40px 0 0 0" onClick={logout}>
+        <FlexButton margin="40px 0 0" onClick={logout}>
           <Text typo="Caption2" colorCode={theme.palette.Gray300}>
             로그아웃
           </Text>

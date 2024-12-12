@@ -57,7 +57,6 @@ const MyReviewPage = () => {
 
   useEffect(() => {
     if (reviewListData) {
-      // setReviewList(reviewListData.reviewList);
       setReviewCnt(reviewListData.reviewCnt);
       console.log(reviewListData);
     }
@@ -65,30 +64,31 @@ const MyReviewPage = () => {
   return (
     <MobileLayout>
       <Header
-        backIcon={true}
+        backIcon
         title="내가 쓴 후기"
         titleAlign="start"
         onClickBack={handleNavigate}
       />
       <Flex direction="column" justify="flex-start" padding="0 20px">
-        <Flex justify="flex-start" margin='0 0 37px 0'>
+        <Flex justify="flex-start" margin="0 0 37px 0">
           <Text typo="Title1">총 {reviewCnt}건</Text>
         </Flex>
-        <ReviewGrid>
-          {dummy.length > 0 &&
-            dummy.map((review, index) => {
-              return (
-                <div key={index}>
-                  <PreviewOfReviews
-                    reviewId={review.reviewId}
-                    shopName={review.shopName}
-                    createdAt={review.createdAt}
-                    reviewImageURL={review.reviewImageURL}
-                  />
-                  </div>
-              );
-            })}
-        </ReviewGrid>
+        {dummy.length > 0 ? (
+          <ReviewGridList>
+            {dummy.map(({ reviewId, shopName, createdAt, reviewImageURL }) => (
+              <li key={reviewId}>
+                <PreviewOfReviews
+                  reviewId={reviewId}
+                  shopName={shopName}
+                  createdAt={createdAt}
+                  reviewImageURL={reviewImageURL}
+                />
+              </li>
+            ))}
+          </ReviewGridList>
+        ) : (
+          <div>없는 UI</div>
+        )}
       </Flex>
     </MobileLayout>
   );
@@ -96,12 +96,11 @@ const MyReviewPage = () => {
 
 export default MyReviewPage;
 
-const ReviewGrid = styled.div`
+const ReviewGridList = styled.ul`
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2열로 배치 */
   gap: 4px;
   padding: 0 12px;
-
 
   @media (max-width: 375px) {
     grid-template-columns: repeat(2, 1fr); /* 2열 유지 */

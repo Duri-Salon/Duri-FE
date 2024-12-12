@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const Flex = styled.div<{
+export type FlexProps = {
   direction?: string;
   justify?: string;
   align?: string;
@@ -13,7 +13,9 @@ export const Flex = styled.div<{
   height?: number | string;
   borderRadius?: number;
   backgroundColor?: string;
-}>`
+};
+
+export const Flex = styled.div<FlexProps>`
   display: flex;
   flex-direction: ${({ direction }) => (direction ? `${direction}` : 'row')};
   justify-content: ${({ justify }) => (justify ? `${justify}` : 'center')};

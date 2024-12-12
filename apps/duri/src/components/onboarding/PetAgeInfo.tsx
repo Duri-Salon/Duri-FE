@@ -9,14 +9,17 @@ interface PetBirthYearInfoProps {
   name: string;
 }
 
+const MAX_PET_AGE = 26;
+
 const PetAgeInfo = ({ control, name }: PetBirthYearInfoProps) => {
   // 나이 리스트 생성 (현재 연도 - 0세부터 25세까지)
-  const ageList = Array.from({ length: 26 }, (_, i) => i);
+  const ageList = Array.from({ length: MAX_PET_AGE }, (_, i) => i);
 
   return (
     <Flex direction="column" align="flex-start" gap={28}>
       <Text typo="Heading" justify="flex-start">
-        {name}의 <br />
+        {name}의
+        <br />
         나이를 입력해주세요
       </Text>
       <Text

@@ -17,20 +17,34 @@ const AuthPage = () => {
   const [query] = useSearchParams();
   const providerId = query.get('providerId') || '';
 
-  const { data, error, isSuccess } = useDuriNaverLogin(providerId);
+  const { data, isError, isLoading } = useDuriNaverLogin({
+    providerId,
+    queryKey: ['test'],
+    options: {
+      enabled: !!providerId,
+    },
+  });
 
   useEffect(() => {
-    if (error) {
+    if (isError) {
       window.alert('로그인에 실패했습니다.');
-    } else if (isSuccess && data) {
-      localStorage.setItem(`${data.client}`, data.token);
-      if (data.newUser) {
-        navigate('/onboarding');
-      } else {
-        navigate('/');
-      }
+
+      return;
     }
-  }, [data, error]);
+
+    const { client, token, newUser } = data;
+
+    localStorage.setItem(client, token);
+    navigate(newUser ? '/onboarding' : '/');
+  }, [data, isError]);
+
+  if (isLoading) {
+    return <>로딩UI</>;
+  }
+
+  if (isError) {
+    return <>에러 UI</>;
+  }
 
   return (
     <MobileLayout>

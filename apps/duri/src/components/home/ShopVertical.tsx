@@ -2,6 +2,8 @@ import { useNavigate } from 'react-router-dom';
 
 import { RecommendedShopType } from '@duri/assets/types/shop';
 import { Button, HeightFitFlex, Image, Text, theme } from '@duri-fe/ui';
+import ModalV2 from '@duri-fe/ui/src/components/ModalV2';
+import { useModalV2 } from '@duri-fe/utils/src/hooks/useModal';
 import styled from '@emotion/styled';
 
 export const ShopVertical = ({
@@ -12,8 +14,17 @@ export const ShopVertical = ({
   const navigate = useNavigate();
   const handleClickShop = (shopIdx: number) => navigate(`/shop/${shopIdx}`);
 
+  const { isOpen, openModal, closeModal } = useModalV2();
+
   return (
     <HeightFitFlex justify="flex-start" gap={6}>
+      <button type="button" onClick={openModal}>
+        모달 오픈 버튼
+      </button>
+      <button type="button" onClick={closeModal}>
+        모달 닫기 버튼
+      </button>
+      <ModalV2 isOpen={isOpen} />
       {shopList &&
         shopList.map((shop: RecommendedShopType) => (
           <Wrapper

@@ -3,8 +3,10 @@ import { useNavigate } from 'react-router-dom';
 import { Approve, Flex, Text, theme } from '@duri-fe/ui';
 import styled from '@emotion/styled';
 
-interface DesignerInfoProps {
-  version?: 'vertical' | 'horizontal';
+export type DesignerInfo = 'vertical' | 'horizontal';
+
+export interface DesignerInfoProps {
+  version?: DesignerInfo;
   designerId: number | string;
   name: string;
   age: number;

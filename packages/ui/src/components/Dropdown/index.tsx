@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { HTMLAttributes, useEffect, useRef, useState } from 'react';
 
 import { UnionDown, UnionUp } from '@duri-fe/ui';
 import { theme } from '@duri-fe/ui';
@@ -9,7 +9,8 @@ import { DropdownBox } from './DropdownBox';
 import { Option } from './Option';
 import { Select } from './Select';
 
-interface DropdownProps {
+interface DropdownProps
+  extends Omit<HTMLAttributes<HTMLDivElement>, 'onSelect'> {
   width?: number | string;
   margin?: string;
   options?: string[] | number[]; // select 목록
@@ -25,6 +26,7 @@ export const Dropdown = ({
   defaultValue,
   suffix = '',
   onSelect,
+  ...rest
 }: DropdownProps) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [selectedOption, setSelectedOption] = useState<string | number>(
@@ -67,6 +69,7 @@ export const Dropdown = ({
         width={width}
         onClick={toggleDropdown}
         ref={dropdownRef}
+        {...rest}
       >
         {selectedOption === defaultValue ? (
           <Text

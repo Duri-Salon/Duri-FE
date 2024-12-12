@@ -11,7 +11,7 @@ const PetDiary = () => {
         backgroundColor={theme.palette.Normal500}
         borderRadius={12}
         margin="-70px 0 0 0"
-        padding="38px 28px 26px 28px"
+        padding="38px 28px 26px"
       >
         <Flex
           height={171}
@@ -19,7 +19,7 @@ const PetDiary = () => {
           backgroundColor={theme.palette.Normal300}
         ></Flex>
       </Flex>
-      <Flex padding="45px 20px 124px 20px" direction="column" gap={32}>
+      <Flex padding="45px 20px 124px" direction="column" gap={32}>
         <HistoryCard
           visitMonth="12월"
           tagContent="미용 완료"

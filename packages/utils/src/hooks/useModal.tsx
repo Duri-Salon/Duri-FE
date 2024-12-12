@@ -1,5 +1,23 @@
 import { useEffect, useRef, useState } from 'react';
 
+export const useModalV2 = (initialIsOpen = false) => {
+  const [isOpen, setIsOpen] = useState(initialIsOpen);
+
+  const openModal = () => {
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
+
+  return {
+    isOpen,
+    openModal,
+    closeModal,
+  };
+};
+
 export const useModal = () => {
   const [isOpenModal, setIsOpenModal] = useState(false);
   const modalRef = useRef<HTMLDivElement>(null);

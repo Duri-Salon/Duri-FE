@@ -9,25 +9,38 @@ interface PetGenderInfoProps {
   control: Control<FormData>;
 }
 
+type PetGender = 'M' | 'F';
+
+interface PetGenderOption {
+  label: string;
+  value: PetGender;
+}
+
+const PET_GENDER_OPTION_LIST: PetGenderOption[] = [
+  {
+    label: '왕자님',
+    value: 'M',
+  },
+  {
+    label: '공주님',
+    value: 'F',
+  },
+];
+
 const PetGenderInfo = ({ control }: PetGenderInfoProps) => {
-  const [gender, setGender] = useState<string>('');
+  const [gender, setGender] = useState<PetGender | null>(null);
 
   const handleClickButton = (
     field: {
-      onChange: (value: string) => void;
-      value: string;
+      onChange: (value: PetGender | null) => void;
+      value: string | null;
       name: string;
     },
-    value: string,
+    value: PetGender | null,
   ) => {
     field.onChange(value);
     setGender(value);
   };
-
-  const options = [
-    { label: '왕자님', value: 'M' },
-    { label: '공주님', value: 'F' },
-  ];
 
   return (
     <Flex direction="column" align="flex-start" gap={28}>
@@ -49,7 +62,7 @@ const PetGenderInfo = ({ control }: PetGenderInfoProps) => {
           rules={{ required: '성별을 선택해주세요.' }}
           render={({ field }) => (
             <Flex margin="47px 0" justify="flex-start" gap={8}>
-              {options.map(({ label, value }) => (
+              {PET_GENDER_OPTION_LIST.map(({ label, value }) => (
                 <Button
                   key={value}
                   width="fit-content"
@@ -67,7 +80,7 @@ const PetGenderInfo = ({ control }: PetGenderInfoProps) => {
                       : `1px solid ${theme.palette.Gray100}`
                   }
                   onClick={() =>
-                    handleClickButton(field, gender === value ? '' : value)
+                    handleClickButton(field, gender === value ? null : value)
                   }
                 >
                   {label}

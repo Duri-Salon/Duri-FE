@@ -1,6 +1,6 @@
-// con
+// STUDENT_NAME
 
-export const breedMapping: Record<string, string> = {
+export const BREED_MAPPING: Record<string, string> = {
   도베르만: '도베르만',
   '래브라도 리트리버': '래브라도 리트리버',
   러시안블루: '러시안블루',
@@ -63,9 +63,9 @@ export const breedMapping: Record<string, string> = {
   풍산견: '풍산견',
   프렌치불독: '프렌치불독',
   화이트테리어: '화이트테리어',
-};
+} as const;
 
-export const breeds: string[] = [
+export const BREEDS: string[] = [
   // '견종 입력',
   '도베르만',
   '래브라도 리트리버',
