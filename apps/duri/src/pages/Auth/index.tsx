@@ -38,7 +38,7 @@ const AuthPage = () => {
       <Container direction="column">
         {/** 로고 */}
         <DuriDog width={169} height={143} />
-        <Flex direction="column" margin="24px 0 0 0">
+        <Flex direction="column">
           <Text typo="Heading">두리묭실로</Text>
           <Text typo="Heading">쉽고 빠르게 예약해요!</Text>
           <Text
