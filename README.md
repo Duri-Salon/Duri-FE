@@ -1,7 +1,9 @@
 # 두리묭실(Doori-Salon)
 
 <br/>
-<img width="480" alt="logo" src="https://github.com/user-attachments/assets/f470c3c6-84bc-41cd-80a8-02b8da60cb30" />
+
+<img height="150" alt="logo2" src="https://github.com/user-attachments/assets/dc02fab4-f23e-46b7-93c4-fe471f4aba60" />
+<img height="150" alt="logo1" style="margin-right: 20px;" src="https://github.com/user-attachments/assets/f470c3c6-84bc-41cd-80a8-02b8da60cb30" />
 
 ### 반려견 케어와 미용사의 가치를 함께 완성하는 새로운 반려견 미용 중계 서비스, 두리묭실
 </div>
