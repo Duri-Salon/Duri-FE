@@ -9,7 +9,7 @@
 </div>
 <br/>
 
-(현재는 서버 중지하였습니다.)
+(현재는 서버 중지했습니다.)
 | Service           | URL                           |
 | -------------- | ----------------------------- |
 | 고객 서비스 | https://www.duri-salon.store, https://duri-saloncom.vercel.app |
