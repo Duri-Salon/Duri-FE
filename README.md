@@ -1,9 +1,7 @@
-<div align = "center">
-  
 # 두리묭실(Doori-Salon)
 
 <br/>
-<img width="540" alt="Frame 60311" src="https://github.com/user-attachments/assets/f470c3c6-84bc-41cd-80a8-02b8da60cb30" />
+<img width="480" alt="logo" src="https://github.com/user-attachments/assets/f470c3c6-84bc-41cd-80a8-02b8da60cb30" />
 
 ### 반려견 케어와 미용사의 가치를 함께 완성하는 새로운 반려견 미용 중계 서비스, 두리묭실
 </div>
@@ -21,20 +19,60 @@
 ### Service UI
 <img width="648" src="https://github.com/user-attachments/assets/2721ba03-1cb3-4ce6-a99a-ebe993f07356" />
 
+<br/>
+<br/>
+
+**미용 예약 스케줄 관리**
+
+<img height="240" alt="미용 예약 스케줄 관리" src="https://github.com/user-attachments/assets/15fef83a-1288-4a6f-9c8e-fe4e1511f473" />
+
+<br/>
+<br/>
+
 **고객 미용일기, 미용사 포트폴리오 서비스**
+<br/>
+
+<img height="240" alt="고객 미용일기, 미용사 포트폴리오 서비스" src="https://github.com/user-attachments/assets/f7897239-d840-4d56-8746-955b7f132438" />
+
+<br/>
+<br/>
 
 **견적서 요청, 견적서 전송 서비스**
+<br/>
+
+<br/>
+<br/>
 
 **AI 미용 서비스**
+<br/>
+
+<img height="240" alt="AI 미용 서비스" src="https://github.com/user-attachments/assets/d80e1109-46ed-4750-9b6e-f017c04d3dc5" />
+
+<br/>
+<br/>
 
 **미용 후기 및 별점 작성, 확인 서비스**
 
-**미용사 월 매출 통계 서비스**
+<br/>
+<br/>
 
-**자세한 온보딩**
+**미용사 월 매출 통계 서비스**
+<br/>
+
+<img height="240" alt="미용사 월 매출 통계 서비스" src="https://github.com/user-attachments/assets/e2bafcc2-2f1d-45ba-954c-e7fe38cf3bcd" />
+
+<br/>
+<br/>
+
+**상세한 온보딩**
+
+<br/>
+<br/>
 
 **입점 요청, 수락**
 
+<br/>
+<br/>
 
 
 ## 폴더 구조
