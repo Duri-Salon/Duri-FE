@@ -9,7 +9,7 @@
 </div>
 <br/>
 
-(현재는 서버 중지하였습니다.)
+(현재는 서버 중지했습니다.)
 | Service           | URL                           |
 | -------------- | ----------------------------- |
 | 고객 서비스 | https://www.duri-salon.store, https://duri-saloncom.vercel.app |
@@ -23,91 +23,11 @@
 </div>
 </br></br>
 
-## 두리묭실 UI
-
-### Design System
+## Design System
 [두리묭실 Storybook 링크](https://storybook-durisalon.vercel.app/?path=/docs)
 <br/>
 
-<img width="648" alt="storybook screenshot" src="https://github.com/user-attachments/assets/45f3eaee-36a2-4eff-a6dd-c8813da81322" />
-
-### Service UI
-<img width="448" src="https://github.com/user-attachments/assets/2721ba03-1cb3-4ce6-a99a-ebe993f07356" />
-
-<br/>
-<br/>
-
-**미용 예약 스케줄 관리**
-
-<img height="240" alt="미용 예약 스케줄 관리" src="https://github.com/user-attachments/assets/15fef83a-1288-4a6f-9c8e-fe4e1511f473" />
-
-<br/>
-<br/>
-
-**고객 미용일기, 미용사 포트폴리오 서비스**
-<br/>
-
-<img height="240" alt="고객 미용일기, 미용사 포트폴리오 서비스" src="https://github.com/user-attachments/assets/f7897239-d840-4d56-8746-955b7f132438" />
-
-<br/>
-<br/>
-
-**견적서 요청, 견적서 전송 서비스**
-<br/>
-
-- 고객
-  
-<img alt="견적서 요청, 견적서 전송 서비스1" src="https://github.com/user-attachments/assets/8e777ee6-750b-4b21-9780-8d33518373f1" />
-
-<br/>
-
-- 미용사
-
-<img height="320" alt="견적서 요청, 견적서 전송 서비스2" src="https://github.com/user-attachments/assets/db759de4-a0fd-4b30-b2bd-2fb93614c117" />
-
-<br/>
-<br/>
-
-**AI 미용 서비스**
-
-<br/>
-
-<img alt="AI 미용 서비스" src="https://github.com/user-attachments/assets/d80e1109-46ed-4750-9b6e-f017c04d3dc5" />
-
-<br/>
-<br/>
-
-**미용사 월 매출 통계 서비스**
-<br/>
-
-<img height="240" alt="미용사 월 매출 통계 서비스" src="https://github.com/user-attachments/assets/e2bafcc2-2f1d-45ba-954c-e7fe38cf3bcd" />
-
-<br/>
-<br/>
-
-**맞는 가게 추천을 위한 상세한 온보딩**
-<br/>
-
-- 고객
-<img alt="상세한 온보딩1" src="https://github.com/user-attachments/assets/57aef78c-ea56-42d5-812e-0714d549f9a7" />
-
-<br/>
-
-- 미용사
-<img height="320" alt="상세한 온보딩2" src="https://github.com/user-attachments/assets/342ed345-cc68-4041-9b23-dc7fb81c64d4" />
-
-<br/>
-<br/>
-
-**입점 요청, 수락**
-<br/>
-
-<img height="240" alt="입점 요청, 수락" src="https://github.com/user-attachments/assets/350ee85c-44bf-4e23-86a3-a7d10402cb96" />
-
-
-<br/>
-<br/>
-
+<img width="548" alt="storybook screenshot" src="https://github.com/user-attachments/assets/45f3eaee-36a2-4eff-a6dd-c8813da81322" />
 
 ## 폴더 구조
 
@@ -215,8 +135,10 @@
 
 
 ## Technology Stack (기술 스택)
-<img width="500" alt="architecture" src="https://github.com/user-attachments/assets/cf16f43b-2c78-446e-8799-13a95f91fae3">
+<img width="480" alt="architecture" src="https://github.com/user-attachments/assets/cf16f43b-2c78-446e-8799-13a95f91fae3">
+
 <br/>
+
 <table>
   <tr>
     <th>React</th><th>TypeScript</th><th>React-Query</th>
@@ -242,7 +164,7 @@
 
 <br/>
 
-## 실행 방법
+## 로컬 실행 방법
 
 ```
 # 레포지토리를 클론 + 폴더 이동
@@ -272,22 +194,102 @@ yarn preview
 - 매주 **일요일 저녁 10시** 정기 회의 진행
     - 주간 작업 점검 및 다음 주 계획 수립.
 
-### 개발 컨벤션**
+### 개발 컨벤션
 
-#### **코딩 컨벤션**
+#### 코딩 컨벤션
 - **프론트엔드 코딩 컨벤션**: [노션링크](https://checkered-muscari-213.notion.site/f526ae57696c49ddbdfc67662d7971d4?pvs=4)
 - **백엔드 코딩 컨벤션**: [노션링크](https://checkered-muscari-213.notion.site/da1788e44f3249799b0f5158e2a4ceb8?pvs=4)
 
-#### **브랜치 명명 규칙**
+#### 브랜치 명명 규칙
 - **브랜치 명명 규칙**: [노션링크](https://checkered-muscari-213.notion.site/780701593d864f288238478aa6395224?pvs=4)
 
-#### **Pull Request 컨벤션**
+#### Pull Request 컨벤션
 - **Pull Request 컨벤션**: [노션링크](https://checkered-muscari-213.notion.site/PR-1dbbb6a28d2d4784964e4e855629656c?pvs=4)
 
-
-### **Jira로 작업 방식**
+### **Jira 작업 방식**
 - Epic, Story, Task 등 우선순위와 작업 단계를 명확히 구분.
 - 작업 상태는 **To Do → In Progress → Done**으로 관리.
 - 각 Task 완료 시, 관련 **Pull Request 링크**를 Jira에 첨부.
 
 <br/>
+
+
+## 두리묭실 기능 및 Service UI
+
+<img width="448" src="https://github.com/user-attachments/assets/2721ba03-1cb3-4ce6-a99a-ebe993f07356" />
+
+<br/>
+<br/>
+
+**미용 예약 스케줄 관리**
+
+<img alt="미용 예약 스케줄 관리" src="https://github.com/user-attachments/assets/15fef83a-1288-4a6f-9c8e-fe4e1511f473" />
+
+<br/>
+<br/>
+
+**고객 미용일기, 미용사 포트폴리오 서비스**
+<br/>
+
+<img height="280" alt="고객 미용일기, 미용사 포트폴리오 서비스" src="https://github.com/user-attachments/assets/f7897239-d840-4d56-8746-955b7f132438" />
+
+<br/>
+<br/>
+
+**견적서 요청, 견적서 전송 서비스**
+<br/>
+
+- 고객
+  
+<img alt="견적서 요청, 견적서 전송 서비스1" src="https://github.com/user-attachments/assets/8e777ee6-750b-4b21-9780-8d33518373f1" />
+
+<br/>
+
+- 미용사
+
+<img alt="견적서 요청, 견적서 전송 서비스2" src="https://github.com/user-attachments/assets/db759de4-a0fd-4b30-b2bd-2fb93614c117" />
+
+<br/>
+<br/>
+
+**AI 미용 서비스**
+
+<br/>
+
+<img alt="AI 미용 서비스" src="https://github.com/user-attachments/assets/d80e1109-46ed-4750-9b6e-f017c04d3dc5" />
+
+<br/>
+<br/>
+
+**미용사 월 매출 통계 서비스**
+<br/>
+
+<img alt="미용사 월 매출 통계 서비스" src="https://github.com/user-attachments/assets/e2bafcc2-2f1d-45ba-954c-e7fe38cf3bcd" />
+
+<br/>
+<br/>
+
+**맞는 가게 추천을 위한 상세한 온보딩**
+<br/>
+
+- 고객
+<img alt="상세한 온보딩1" src="https://github.com/user-attachments/assets/57aef78c-ea56-42d5-812e-0714d549f9a7" />
+
+<br/>
+
+- 미용사
+<img height="320" alt="상세한 온보딩2" src="https://github.com/user-attachments/assets/342ed345-cc68-4041-9b23-dc7fb81c64d4" />
+
+<br/>
+<br/>
+
+**입점 요청, 수락**
+<br/>
+
+<img height="280" alt="입점 요청, 수락" src="https://github.com/user-attachments/assets/350ee85c-44bf-4e23-86a3-a7d10402cb96" />
+
+
+<br/>
+<br/>
+
+
