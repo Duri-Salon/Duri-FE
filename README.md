@@ -7,6 +7,18 @@
 </div>
 <br/>
 
+**고객 서비스 주소:** [vercel deployment](https://duri-saloncom.vercel.app), [domain deployment](https://www.duri-salon.store) (현재 서버 중지)
+<br/>
+**미용사 서비스 주소:** [vercel deployment](https://salon-duri-salon.vercel.app) (현재 서버 중지)
+<br/>
+**관리자 서비스 주소:** [vercel deployment](https://adminduri-saloncom.vercel.app) (현재 서버 중지)
+<br/>
+
+#### Demo Video
+<div>
+<a href="https://www.youtube.com/watch?v=75HMZXuKFms"><img src="https://img.shields.io/badge/YOUTUBE-FF0000?style=for-the-badge&logo=YouTube&logoColor=white&link=https://www.youtube.com/watch?v=oD8ShZGQrqo"/></a>
+</div>
+</br></br>
 
 ## 두리묭실 UI
 
@@ -17,7 +29,7 @@
 <img width="648" alt="storybook screenshot" src="https://github.com/user-attachments/assets/45f3eaee-36a2-4eff-a6dd-c8813da81322" />
 
 ### Service UI
-<img width="648" src="https://github.com/user-attachments/assets/2721ba03-1cb3-4ce6-a99a-ebe993f07356" />
+<img width="448" src="https://github.com/user-attachments/assets/2721ba03-1cb3-4ce6-a99a-ebe993f07356" />
 
 <br/>
 <br/>
@@ -40,18 +52,24 @@
 **견적서 요청, 견적서 전송 서비스**
 <br/>
 
+- 고객
+  
+<img alt="견적서 요청, 견적서 전송 서비스1" src="https://github.com/user-attachments/assets/8e777ee6-750b-4b21-9780-8d33518373f1" />
+
+<br/>
+
+- 미용사
+
+<img height="320" alt="견적서 요청, 견적서 전송 서비스2" src="https://github.com/user-attachments/assets/db759de4-a0fd-4b30-b2bd-2fb93614c117" />
+
 <br/>
 <br/>
 
 **AI 미용 서비스**
-<br/>
-
-<img height="240" alt="AI 미용 서비스" src="https://github.com/user-attachments/assets/d80e1109-46ed-4750-9b6e-f017c04d3dc5" />
 
 <br/>
-<br/>
 
-**미용 후기 및 별점 작성, 확인 서비스**
+<img alt="AI 미용 서비스" src="https://github.com/user-attachments/assets/d80e1109-46ed-4750-9b6e-f017c04d3dc5" />
 
 <br/>
 <br/>
@@ -64,12 +82,25 @@
 <br/>
 <br/>
 
-**상세한 온보딩**
+**맞는 가게 추천을 위한 상세한 온보딩**
+<br/>
+
+- 고객
+<img alt="상세한 온보딩1" src="https://github.com/user-attachments/assets/57aef78c-ea56-42d5-812e-0714d549f9a7" />
+
+<br/>
+
+- 미용사
+<img height="320" alt="상세한 온보딩2" src="https://github.com/user-attachments/assets/342ed345-cc68-4041-9b23-dc7fb81c64d4" />
 
 <br/>
 <br/>
 
 **입점 요청, 수락**
+<br/>
+
+<img height="240" alt="입점 요청, 수락" src="https://github.com/user-attachments/assets/350ee85c-44bf-4e23-86a3-a7d10402cb96" />
+
 
 <br/>
 <br/>
@@ -255,22 +286,5 @@ yarn preview
 - Epic, Story, Task 등 우선순위와 작업 단계를 명확히 구분.
 - 작업 상태는 **To Do → In Progress → Done**으로 관리.
 - 각 Task 완료 시, 관련 **Pull Request 링크**를 Jira에 첨부.
-
-<br/>
-
-
-
-## Team Members (팀원 및 팀 소개)
-### 구름잉
-- 애견 미용을 뜻하는 Grooming에서 영감을 받은 이름으로, 구름처럼 포근하고 믿음직한 서비스를 제공하겠다는 목표를 담음.
-
-### 프론트엔드 팀원
-|                   노이진                    |                   김찬별                   |                   심승보                    |   
-|:----------------------------------------:|:---------------------------------------:|:----------------------------------------:|    
- |<img src="https://avatars.githubusercontent.com/u/52371699?v=4" alt="노이진" width="100">    |   <img src="https://avatars.githubusercontent.com/u/47071366?v=4" alt="김찬별" width="100">    |    <img src="https://avatars.githubusercontent.com/u/112371013?v=4" alt="심승보" width="100">    |   
-|                 FrontEnd                 |                FrontEnd                 |                 FrontEnd                 |       
-| [GitHub](https://github.com/leejin-rho) | [GitHub](https://github.com/cksquf98) | [GitHub](https://github.com/seungboshim) |    
-
-
 
 <br/>
