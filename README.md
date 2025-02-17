@@ -23,7 +23,7 @@
 </div>
 </br></br>
 
-## 두리묭실 UI
+## 두리묭실 기능 및 UI
 
 ### Design System
 [두리묭실 Storybook 링크](https://storybook-durisalon.vercel.app/?path=/docs)
