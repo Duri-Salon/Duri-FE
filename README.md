@@ -7,12 +7,13 @@
 </div>
 <br/>
 
-**고객 서비스 주소:** [vercel deployment](https://duri-saloncom.vercel.app), [domain deployment](https://www.duri-salon.store) (현재 서버 중지)
-<br/>
-**미용사 서비스 주소:** [vercel deployment](https://salon-duri-salon.vercel.app) (현재 서버 중지)
-<br/>
-**관리자 서비스 주소:** [vercel deployment](https://adminduri-saloncom.vercel.app) (현재 서버 중지)
-<br/>
+(현재는 서버 중지하였습니다.)
+| Service           | URL                           |
+| -------------- | ----------------------------- |
+| 고객 서비스 | https://www.duri-salon.store, https://duri-saloncom.vercel.app |
+| 미용사 서비스  | https://salon-duri-salon.vercel.app   |
+| 관리자 서비스    | https://adminduri-saloncom.vercel.app   |
+
 
 #### Demo Video
 <div>
