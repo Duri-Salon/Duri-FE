@@ -39,7 +39,7 @@
 
 **미용 예약 스케줄 관리**
 
-<img height="240" alt="미용 예약 스케줄 관리" src="https://github.com/user-attachments/assets/15fef83a-1288-4a6f-9c8e-fe4e1511f473" />
+<img alt="미용 예약 스케줄 관리" src="https://github.com/user-attachments/assets/15fef83a-1288-4a6f-9c8e-fe4e1511f473" />
 
 <br/>
 <br/>
@@ -47,7 +47,7 @@
 **고객 미용일기, 미용사 포트폴리오 서비스**
 <br/>
 
-<img height="240" alt="고객 미용일기, 미용사 포트폴리오 서비스" src="https://github.com/user-attachments/assets/f7897239-d840-4d56-8746-955b7f132438" />
+<img height="280" alt="고객 미용일기, 미용사 포트폴리오 서비스" src="https://github.com/user-attachments/assets/f7897239-d840-4d56-8746-955b7f132438" />
 
 <br/>
 <br/>
@@ -63,7 +63,7 @@
 
 - 미용사
 
-<img height="320" alt="견적서 요청, 견적서 전송 서비스2" src="https://github.com/user-attachments/assets/db759de4-a0fd-4b30-b2bd-2fb93614c117" />
+<img alt="견적서 요청, 견적서 전송 서비스2" src="https://github.com/user-attachments/assets/db759de4-a0fd-4b30-b2bd-2fb93614c117" />
 
 <br/>
 <br/>
@@ -80,7 +80,7 @@
 **미용사 월 매출 통계 서비스**
 <br/>
 
-<img height="240" alt="미용사 월 매출 통계 서비스" src="https://github.com/user-attachments/assets/e2bafcc2-2f1d-45ba-954c-e7fe38cf3bcd" />
+<img alt="미용사 월 매출 통계 서비스" src="https://github.com/user-attachments/assets/e2bafcc2-2f1d-45ba-954c-e7fe38cf3bcd" />
 
 <br/>
 <br/>
@@ -102,7 +102,7 @@
 **입점 요청, 수락**
 <br/>
 
-<img height="240" alt="입점 요청, 수락" src="https://github.com/user-attachments/assets/350ee85c-44bf-4e23-86a3-a7d10402cb96" />
+<img height="280" alt="입점 요청, 수락" src="https://github.com/user-attachments/assets/350ee85c-44bf-4e23-86a3-a7d10402cb96" />
 
 
 <br/>
