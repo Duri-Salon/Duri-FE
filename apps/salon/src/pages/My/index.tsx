@@ -61,7 +61,6 @@ const MyPage = () => {
               shopId={shopProfile.id}
               shopName={shopProfile.name}
               image={groomerProfile.image}
-              shopEmail={groomerProfile.email}
             />
             <Flex direction="column" margin="40px 0 0">
               <Status
@@ -84,7 +83,7 @@ const MyPage = () => {
                     backgroundColor={theme.palette.White}
                     borderRadius={8}
                     gap={5}
-                    onClick={() => handleNavigate('/my/income')}
+                    onClick={() => handleNavigate('/income')}
                   >
                     <Store width={16} height={16} />
                     <Text typo="Label1">매출관리</Text>

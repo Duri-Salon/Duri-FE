@@ -113,6 +113,7 @@ const Home = () => {
             <MainHeader
               logoColor={theme.palette.Black}
               iconColor={theme.palette.Normal800}
+              notificationIcon={false}
               badge
             />
 
@@ -280,7 +281,6 @@ const Home = () => {
                 age={request.age}
                 weight={request.weight}
                 neutering={request.neutering}
-                // quotationReqId={request.quotationReqId}
                 memo={request.memo}
                 handleClickRequest={handleClickRequest}
               />

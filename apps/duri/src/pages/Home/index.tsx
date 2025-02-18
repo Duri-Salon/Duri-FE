@@ -36,6 +36,7 @@ const Home = () => {
   const { data: petData } = useGetPetInfo();
   const { data: regularListData, isPending: isPendingRegularData } =
     useGetRegularShopList();
+
   const { data: reservationData } = useGetUpcomingReservation();
   const { data: recommendedListData, isPending: isPendingRecommendData } =
     useGetRecommendedShopList(lat, lon);
@@ -45,16 +46,17 @@ const Home = () => {
     navigate('/shop');
   };
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   useEffect(() => {
-    if (coordinates) {
+    if (coordinates.lat && coordinates.lng) {
       setLat(coordinates.lat);
       setLon(coordinates.lng);
     }
   }, [coordinates]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <MobileLayout>
@@ -69,6 +71,7 @@ const Home = () => {
               logoColor={theme.palette.Black}
               iconColor={theme.palette.Normal800}
               searchIcon
+              notificationIcon={false}
               onClickSearch={handleNavigate}
             />
           ) : (
@@ -144,17 +147,27 @@ const Home = () => {
           </Flex>
 
           {/* AI 스타일링 배너 */}
-          <a href="/ai">
-            <AiBanner height={100} />
-          </a>
-          {/* </StyleBannerWrapper> */}
+          <Flex margin="24px 0 0">
+            <a href="/ai">
+              <AiBanner height={100} />
+            </a>
+          </Flex>
         </Flex>
+
+        {/* 추천 샵 */}
         <Flex direction="column">
-          {/* 추천 샵 */}
           {isPendingRecommendData ? (
-            <Flex gap={6} justify="flex-start" padding="0 20px">
-              <SkeletonCard width={152} height={198} borderRadius={12} />
-              <SkeletonCard width={152} height={198} borderRadius={12} />
+            <Flex
+              direction="column"
+              align="flex-start"
+              padding="0 20px"
+              margin="24px 0 0"
+            >
+              <Text typo="Title1">여기 샵은 어때요?</Text>
+              <Flex gap={6} justify="flex-start" margin="6px">
+                <SkeletonCard width={152} height={198} borderRadius={12} />
+                <SkeletonCard width={152} height={198} borderRadius={12} />
+              </Flex>
             </Flex>
           ) : (
             <RecommendedShop shopList={recommendedListData ?? []} />
