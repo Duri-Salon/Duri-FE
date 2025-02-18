@@ -21,7 +21,28 @@
 <div>
 <a href="https://www.youtube.com/watch?v=75HMZXuKFms"><img src="https://img.shields.io/badge/YOUTUBE-FF0000?style=for-the-badge&logo=YouTube&logoColor=white&link=https://www.youtube.com/watch?v=oD8ShZGQrqo"/></a>
 </div>
-</br></br>
+</br>
+
+
+## Tech Stack
+<div>
+  <img src="https://img.shields.io/badge/React-087EA4?style=for-the-badge&logo=React&logoColor=white"/>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white"/>
+</div>
+<div>
+  <img src="https://img.shields.io/badge/Tanstack Query-FF4154?style=for-the-badge&logo=reactquery&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Storybook-FF4785?style=for-the-badge&logo=storybook&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Emotion-DB7093?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Zustand-002B56?style=for-the-badge"/>
+</div>
+<div>
+  <img src="https://img.shields.io/badge/Turborepo-EF4444?style=for-the-badge&logo=turborepo&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MSW-FF6A33?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Husky-A5915F?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Yarn berry-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white"/>
+</div>
+<br/>
 
 ## Design System
 [두리묭실 Storybook 링크](https://storybook-durisalon.vercel.app/?path=/docs)
@@ -29,7 +50,7 @@
 
 <img width="548" alt="storybook screenshot" src="https://github.com/user-attachments/assets/45f3eaee-36a2-4eff-a6dd-c8813da81322" />
 
-## 폴더 구조
+## 프로젝트 구조
 
 <details>
 <summary> 두리묭실 폴더 구조 </summary>
@@ -134,33 +155,8 @@
 <br />
 
 
-## Technology Stack (기술 스택)
-<img width="480" alt="architecture" src="https://github.com/user-attachments/assets/cf16f43b-2c78-446e-8799-13a95f91fae3">
-
-<br/>
-
-<table>
-  <tr>
-    <th>React</th><th>TypeScript</th><th>React-Query</th>
-  </tr>
-  <tr>
-    <td align="center"><img src="https://github.com/user-attachments/assets/e3b49dbb-981b-4804-acf9-012c854a2fd2" alt="React" width="50"></td>
-    <td align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1024px-Typescript_logo_2020.svg.png" alt="TypeScript" width="50"></td>
-    <td align="center"><img src="https://blog.kakaocdn.net/dn/bn46NQ/btrUYpxt8eu/iIkghrhyYOztpLU3KcTrD0/img.png" alt="React-Query" width="50"></td>
-  </tr>
-</table>
-
-<table>
-  <tr>
-    <th>Git</th><th>Figma</th><th>Notion</th><th>Jira</th>
-  </tr>
-  <tr>
-    <td align="center"><img src="https://github.com/user-attachments/assets/483abc38-ed4d-487c-b43a-3963b33430e6" alt="Git" width="50"></td>
-    <td align="center"><img src="https://github.com/user-attachments/assets/aa07f6bc-5034-4461-babf-82ada48f36b0" alt="Figma" width="50"></td>
-    <td align="center"><img src="https://github.com/user-attachments/assets/34141eb9-deca-416a-a83f-ff9543cc2f9a" alt="Notion" width="50"></td>
-    <td align="center"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968875.png" alt="Jira" width="50"></td>
-  </tr>
-</table>
+### 아키텍쳐
+<img width="680" alt="architecture" src="https://github.com/user-attachments/assets/0c832fcf-d54e-4dd1-a36e-2d3456ee2e99">
 
 <br/>
 
